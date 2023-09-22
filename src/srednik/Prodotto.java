@@ -27,6 +27,15 @@ public class Prodotto {
         this.codice = codice;
  
     }
+    
+    public Prodotto(Prodotto p){
+        this.prezzo = p.prezzo;
+        this.iva = p.iva;
+        this.peso = p.peso;
+        this.tara = p.tara;
+        this.descrizione = p.descrizione;
+        this.codice = p.codice;
+    }
 
     public String getDescrizione() {
         return descrizione;
