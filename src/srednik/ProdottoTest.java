@@ -11,11 +11,16 @@ package srednik;
  */
 public class ProdottoTest {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+
+        Prodotto p = new Prodotto(10, 4, 30, 10, "pane","0123414555655");
+
+        System.out.println(p.stampa());
+        System.out.println(p.prezzoIvato());
+        System.out.println(p.pesoLordo());
+        System.out.println(p.codice());
+
     }
-    
+
 }
+
