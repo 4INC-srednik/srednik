@@ -14,11 +14,11 @@ public class Ristorante {
     private int capienzaTavoli;
 
     public Ristorante(Tavolo[] tavoli, int capienzaTavoli) {
-        Tavolo[] copiaTavoli = new Tavolo[tavoli.length];
+        Tavolo[] copia = new Tavolo[tavoli.length];
         for (int i = 0; i<tavoli.length; i++){
-            copiaTavoli[i]=tavoli[i];
+            copia[i]=tavoli[i];
         }
-        this.tavoli = copiaTavoli;
+        this.tavoli = copia;
         this.capienzaTavoli = capienzaTavoli;
     }
     
