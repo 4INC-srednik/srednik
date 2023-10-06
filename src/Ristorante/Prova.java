@@ -12,12 +12,12 @@ package Ristorante;
 public class Prova {
     public static void main(String[] args) {
         Tavolo[] t = new Tavolo[2];
-        t[0] = new Tavolo(12, 4, 3, true);
-        t[1] = new Tavolo(9, 2, 2, false);
+        t[0] = new Tavolo(12, 4);
+        t[1] = new Tavolo(9, 2);
         
         Ristorante r1 = new Ristorante(t, 15);
         
-        Tavolo t3 = new Tavolo(5, 6, 5, true);
+        Tavolo t3 = new Tavolo(5, 6);
         
         r1.addTavolo(t3);
         

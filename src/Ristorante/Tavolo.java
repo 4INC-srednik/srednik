@@ -13,11 +13,20 @@ public class Tavolo {
     private int numero, capienza, personeSedute;
     private Boolean isPrenotato;
 
-    public Tavolo(int numero, int capienza, int personeSedute, Boolean isPrenotato) {
+    public Tavolo(int numero, int capienza) {
         this.numero = numero;
         this.capienza = capienza;
-        this.personeSedute = personeSedute;
-        this.isPrenotato = isPrenotato;
+       
+    }
+    public Tavolo(Tavolo t) {
+        this.numero = t.numero;
+        this.capienza = t.capienza;
+      
+    }
+
+    @Override
+    public String toString() {
+        return "Tavolo{" + "numero=" + numero + ", capienza=" + capienza + ", personeSedute=" + personeSedute + ", isPrenotato=" + isPrenotato + '}';
     }
 
     public int getCapienza() {
@@ -35,5 +44,6 @@ public class Tavolo {
     public Boolean getIsPrenotato() {
         return isPrenotato;
     }
+    
     
 }
