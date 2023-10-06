@@ -31,7 +31,7 @@ public class Supermercato {
     public String getProdotti(){
         String s = "";
         for (int i = 0; i<prodotti.length; i++){
-            s += " il prodotto in posizione "+ i + " e' "+prodotti[i].getDesc()+"\n";
+            s += " il prodotto in posizione "+ i + " e' "+prodotti[i].getDescrizione()+"\n";
         }
         return s;
     }
@@ -48,7 +48,7 @@ public class Supermercato {
         prodotti=copiaProdotti;
     }
     
-    public void addProdotto2(double prezzo, double iva, double peso, double tara, String descrizione, String codiceBarre){
+    public void addProdotto2(double prezzo, int iva, double peso, double tara, String descrizione, String codiceBarre){
         Prodotto[] copiaProdotti = new Prodotto[prodotti.length+1];
         Prodotto prod = new Prodotto( prezzo, iva, peso, tara, descrizione, codiceBarre);
         for (int i = 0; i<copiaProdotti.length; i++){
@@ -72,7 +72,7 @@ public class Supermercato {
             }
         }
         
-        return "il prodotto con il prezzo ivato piu' alto e': "+ prodotti[cont].getDesc()+" con il prezzo di: "+max;
+        return "il prodotto con il prezzo ivato piu' alto e': "+ prodotti[cont].getDescrizione()+" con il prezzo di: "+max;
     }
     
     public String valoreMerce(){
@@ -93,7 +93,7 @@ public class Supermercato {
             }
         }
         
-        return "il prodotto con il peso piu' basso e': "+ prodotti[cont].getDesc()+" con il preso di: "+min;
+        return "il prodotto con il peso piu' basso e': "+ prodotti[cont].getDescrizione()+" con il preso di: "+min;
     }
     
     public String merciSopraMedia (double media){
@@ -101,7 +101,7 @@ public class Supermercato {
         for (int i = 0; i<prodotti.length; i++){
             if (media < prodotti[i].getPrezzo()){
                 t="";
-                t += "prodotto con prezzo maggiore alla media: "+ prodotti[i].getDesc();
+                t += "prodotto con prezzo maggiore alla media: "+ prodotti[i].getDescrizione();
             }
         }
         return t;

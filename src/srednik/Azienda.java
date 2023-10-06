@@ -9,6 +9,7 @@ package srednik;
  *
  * @author mattia.srednik
  */
+/*
 public class Azienda {
     private String nomeGruppo;
     private String sedeLegale;
@@ -33,3 +34,4 @@ public class Azienda {
     }
     
 }
+*/
