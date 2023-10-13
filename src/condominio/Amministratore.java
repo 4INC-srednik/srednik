@@ -10,23 +10,24 @@ package condominio;
  * @author mattia.srednik
  */
 public class Amministratore {
+
     private Condominio condomini[];
     private int nAppGestiti;
 
     public Amministratore(Condominio[] condomini) {
         this.condomini = condomini;
     }
-    
-    public String datiCondMaxApp(){
+
+    public String datiCondMaxApp() {
         String ris = "";
         return ris;
     }
-    
-    public String nomePropMaxMill(){
+
+    public String nomePropMaxMill() {
         String ris = "";
         return ris;
     }
-    
+
     /*public Condominio addCondominio() {
         ..........
         ..........
