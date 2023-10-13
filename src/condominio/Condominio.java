@@ -38,8 +38,6 @@ public class Condominio {
 
         return proprietario;
     }
-    
-    
 
     @Override
     public String toString() {
